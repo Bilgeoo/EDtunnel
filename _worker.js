@@ -6,9 +6,9 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'ec973e97-8e71-438b-89e7-a632fcdd604a';
 
-const proxyIPs = ['182.253.140.250'];
+const proxyIPs = ['8.219.238.145'];
 
-let proxyIP = ['182.253.140.250'];
+let proxyIP = ['8.219.238.145'];
 
 let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
@@ -200,7 +200,7 @@ async function vlessOverWSHandler(request) {
 			const {
 				hasError,
 				message,
-				portRemote = 80,
+				portRemote = 443,
 				addressRemote = '',
 				rawDataIndex,
 				vlessVersion = new Uint8Array([0, 0]),
