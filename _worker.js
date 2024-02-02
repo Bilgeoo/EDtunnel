@@ -8,7 +8,7 @@ let userID = 'ec973e97-8e71-438b-89e7-a632fcdd604a';
 
 const proxyIPs = ['182.253.140.250'];
 
-let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
+let proxyIP = ['182.253.140.250'];
 
 let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
@@ -200,7 +200,7 @@ async function vlessOverWSHandler(request) {
 			const {
 				hasError,
 				message,
-				portRemote = 443,
+				portRemote = 80,
 				addressRemote = '',
 				rawDataIndex,
 				vlessVersion = new Uint8Array([0, 0]),
